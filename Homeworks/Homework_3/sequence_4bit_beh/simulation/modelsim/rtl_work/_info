@@ -1,0 +1,220 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/simulation/modelsim
+Edut
+Z1 w1632917944
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+R0
+Z4 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/DUT.vhd
+Z5 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/DUT.vhd
+l0
+L4 1
+V_Lh617CKFE[zZ`D^1g?k;1
+!s100 I7di]gi6>Flj9:eB>jL8Q1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1632926935
+!i10b 1
+Z8 !s108 1632926935.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/DUT.vhd|
+Z10 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/DUT.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 _Lh617CKFE[zZ`D^1g?k;1
+!i122 4
+l16
+L9 23
+Vb[kQA9djzLU1<KOHBi4ik0
+!s100 HZ5k35nbLNT`jJ@9TEYjP0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esequence_behavior
+Z13 w1632917886
+R2
+R3
+!i122 3
+R0
+Z14 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/sequence_4bit_beh.vhd
+Z15 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/sequence_4bit_beh.vhd
+l0
+L4 1
+V:B7C@_9fG[z06TfDA>IWV2
+!s100 ?26cjFf9Y]mAGLL[^:SC;1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/sequence_4bit_beh.vhd|
+Z17 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/sequence_4bit_beh.vhd|
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 17 sequence_behavior 0 22 :B7C@_9fG[z06TfDA>IWV2
+!i122 3
+l29
+L9 55
+V7CJGzT`42Q2je`_Ra0Q1Y2
+!s100 ]Y4m=Eck9n;Yh0;H7WP^K3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Etestbench
+Z18 w1632918051
+R3
+R2
+!i122 5
+R0
+Z19 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/Testbench.vhdl
+Z20 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/Testbench.vhdl|
+!s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 5
+l69
+L9 132
+Vd2nPz^6=zFh7IgOjA_VJl3
+!s100 ]Bj`Q5oGFS9WI@CHMNl@f2
+R6
+31
+R7
+!i10b 1
+R8
+R21
+Z22 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/Testbench.vhdl|
+!i113 1
+R11
+R12
+Etoplevel
+Z23 w1632926519
+Z24 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 2
+R0
+Z25 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/TopLevel.vhdl
+Z26 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/TopLevel.vhdl
+l0
+L5 1
+VRW=hg7X2^>c3bX1h9KmmK0
+!s100 gJ^gg3F;Qe=>jcbTR:JjO3
+R6
+31
+Z27 !s110 1632926934
+!i10b 1
+Z28 !s108 1632926934.000000
+Z29 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/TopLevel.vhdl|
+Z30 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/TopLevel.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R24
+R2
+R3
+DEx4 work 8 toplevel 0 22 RW=hg7X2^>c3bX1h9KmmK0
+!i122 2
+l75
+L13 146
+V7gZ5dLQM91=>?j`>OJ_K12
+!s100 B8S?B=8We6FWcKJ0h9FKD3
+R6
+31
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R11
+R12
+Ev_jtag
+Z31 w1623670142
+R24
+R2
+R3
+!i122 1
+R0
+Z32 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/v_jtag/synthesis/v_jtag.vhd
+Z33 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/v_jtag/synthesis/v_jtag.vhd
+l0
+L9 1
+VK7J:B[m3^:cB1Km[I3N602
+!s100 C:GMYKMFIUkIMaKNS>ek<2
+R6
+31
+R27
+!i10b 1
+R28
+Z34 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/v_jtag/synthesis/v_jtag.vhd|
+Z35 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_beh/v_jtag/synthesis/v_jtag.vhd|
+!i113 1
+R11
+R12
+Artl
+R24
+R2
+R3
+DEx4 work 6 v_jtag 0 22 K7J:B[m3^:cB1Km[I3N602
+!i122 1
+l85
+L44 83
+VJODH=ZQLe0=R51Pn2gWGM3
+!s100 QN^;ea;8E9NBL5]J::=Mk2
+R6
+31
+R27
+!i10b 1
+R28
+R34
+R35
+!i113 1
+R11
+R12

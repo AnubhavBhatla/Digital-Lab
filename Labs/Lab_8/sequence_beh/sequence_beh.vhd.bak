@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity sequence_behavior is
+port (reset,clock: in std_logic;
+y:out std_logic_vector(2 downto 0));
+end entity sequence_behavior;
+
+architecture behav  of sequence_behavior is
+--state binary encoding
+signal state:std_logic_vector(2 downto 0);
+constant s_2:std_logic_vector(2 downto 0):="010";
+--write the remaining constant declarations    
+begin 
+-- process for next state and output logic
+reg_process: process(clock,reset)
+begin
+if(reset='1')then 
+state<=; -- write the reset state
+elsif(clock'event and clock='1')then
+case state is  
+      --reset
+      when s_2=>
+     state<=s_0;
+     -- write the remaining choices   
+       --DEFAULT CASE
+      when others=>
+        state<=;-- write the reset state
+      end case; 
+end if;
+end process reg_process;
+-- output logic concurrent statemet or one more process
+y<=state;
+end behav;

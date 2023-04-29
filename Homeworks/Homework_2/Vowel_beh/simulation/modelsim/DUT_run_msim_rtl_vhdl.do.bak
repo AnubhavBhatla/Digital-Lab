@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {D:/IITB/Semester_3/EE214/Homework/Homework_2/Vowel_beh/vowel_beh.vhd}
+vcom -93 -work work {D:/IITB/Semester_3/EE214/Homework/Homework_2/Vowel_beh/DUT.vhd}
+

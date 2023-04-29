@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+library work;
+use work.Gates.all;
+
+library work;
+use work.FA.all;
+
+library work;
+use work.A_4.all;
+
+entity _4bit is
+  port (a: in std_logic_vector(3 downto 0); b: in std_logic_vector(2 downto 0); Y: out std_logic_vector(4 downto 0); Cout: out std_logic);
+end entity Adder_4bit;
+
+architecture Struct of Adder_4bit is
+	signal t0,t1,t2: std_logic;
+begin
+
+  HA: HALF_ADDER port map (A => a(0), B => b(0), C => t0, S => Y(0));
+  FA_1: Full_Adder port map (A => a(1), B => b(1), Cin => t0, S => Y(1), Cout => t1);
+  FA_2: Full_Adder port map (A => a(2), B => b(2), Cin => t1, S => Y(2), Cout => t2);
+  FA_3: Full_Adder port map (A => a(3), B => b(3), Cin => t2, S => Y(3), Cout => Cout);
+  
+end Struct;

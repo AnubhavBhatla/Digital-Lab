@@ -1,0 +1,326 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/simulation/modelsim
+Edff1
+Z1 w1632917222
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z4 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/d_flipflop.vhd
+Z5 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/d_flipflop.vhd
+l0
+L36 1
+VL5GJ6`Bf[VaHlESL=7[H82
+!s100 IFiA@F]HG[a0MX5Sa?6QX0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1632926881
+!i10b 1
+Z8 !s108 1632926881.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/d_flipflop.vhd|
+Z10 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/d_flipflop.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+DEx4 work 4 dff1 0 22 L5GJ6`Bf[VaHlESL=7[H82
+!i122 3
+l39
+L38 12
+VY[IJ<a1hBXf=SPWjgIK5Y3
+!s100 `XbWlIz<g;cS@V;R[MchF2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edff2
+R1
+R2
+R3
+!i122 3
+R0
+R4
+R5
+l0
+L19 1
+Vc2nTV^5]UPK^b9[_7BdQ40
+!s100 ]L6oKfhmLGeaZI6]82?l:0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 4 dff2 0 22 c2nTV^5]UPK^b9[_7BdQ40
+!i122 3
+l22
+L21 12
+Vfoom^WU[1:gPa=S9k`@JC2
+!s100 D2K8QWzP<H^aSMj^`BcgQ2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1632917461
+R2
+R3
+!i122 4
+R0
+Z14 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/dut.vhd
+Z15 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/dut.vhd
+l0
+L4 1
+V_Lh617CKFE[zZ`D^1g?k;1
+!s100 I7di]gi6>Flj9:eB>jL8Q1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/dut.vhd|
+Z17 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/dut.vhd|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 _Lh617CKFE[zZ`D^1g?k;1
+!i122 4
+l16
+L9 23
+VikmCRk7kZFMkjPmkG`>3G3
+!s100 JUFcbg^^?@5aRM5CPE]3`3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Pflipflops
+R2
+R3
+!i122 3
+R1
+R0
+R4
+R5
+l0
+L3 1
+VXGO<XG`8i^ZkQJl@ZnBdi0
+!s100 HPXk<KTHAmQiP^Gk_5WjF2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esequence_generator_structural
+Z18 w1632925876
+Z19 DPx4 work 9 flipflops 0 22 XGO<XG`8i^ZkQJl@ZnBdi0
+R2
+R3
+!i122 5
+R0
+Z20 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/sequence_4bit_str.vhd
+Z21 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/sequence_4bit_str.vhd
+l0
+L6 1
+V0n9hkCOLHjL<SGg_Wzfo:2
+!s100 UScaGQdm1HNzHTZcDfU291
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/sequence_4bit_str.vhd|
+Z23 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/sequence_4bit_str.vhd|
+!i113 1
+R11
+R12
+Astruct
+R19
+R2
+R3
+DEx4 work 29 sequence_generator_structural 0 22 0n9hkCOLHjL<SGg_Wzfo:2
+!i122 5
+l13
+L10 29
+VW`mN=XCLXe:gJ:?X3:PO52
+!s100 PoPS;>Dig8TQ2[RkFWAL[3
+R6
+31
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Etestbench
+Z24 w1632924635
+R3
+R2
+!i122 6
+R0
+Z25 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/Testbench.vhdl
+Z26 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/Testbench.vhdl|
+!s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 6
+l69
+L9 132
+Vd2nPz^6=zFh7IgOjA_VJl3
+!s100 ]Bj`Q5oGFS9WI@CHMNl@f2
+R6
+31
+R7
+!i10b 1
+R8
+R27
+Z28 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/Testbench.vhdl|
+!i113 1
+R11
+R12
+Etoplevel
+Z29 w1632926056
+Z30 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 2
+R0
+Z31 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/TopLevel.vhdl
+Z32 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/TopLevel.vhdl
+l0
+L5 1
+VRW=hg7X2^>c3bX1h9KmmK0
+!s100 gJ^gg3F;Qe=>jcbTR:JjO3
+R6
+31
+R7
+!i10b 1
+R8
+Z33 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/TopLevel.vhdl|
+Z34 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/TopLevel.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R30
+R2
+R3
+DEx4 work 8 toplevel 0 22 RW=hg7X2^>c3bX1h9KmmK0
+!i122 2
+l75
+L13 146
+V7gZ5dLQM91=>?j`>OJ_K12
+!s100 B8S?B=8We6FWcKJ0h9FKD3
+R6
+31
+R7
+!i10b 1
+R8
+R33
+R34
+!i113 1
+R11
+R12
+Ev_jtag
+Z35 w1623670142
+R30
+R2
+R3
+!i122 1
+R0
+Z36 8D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/v_jtag/synthesis/v_jtag.vhd
+Z37 FD:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/v_jtag/synthesis/v_jtag.vhd
+l0
+L9 1
+VK7J:B[m3^:cB1Km[I3N602
+!s100 C:GMYKMFIUkIMaKNS>ek<2
+R6
+31
+Z38 !s110 1632926880
+!i10b 1
+Z39 !s108 1632926880.000000
+Z40 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/v_jtag/synthesis/v_jtag.vhd|
+Z41 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_3/sequence_4bit_str/v_jtag/synthesis/v_jtag.vhd|
+!i113 1
+R11
+R12
+Artl
+R30
+R2
+R3
+DEx4 work 6 v_jtag 0 22 K7J:B[m3^:cB1Km[I3N602
+!i122 1
+l85
+L44 83
+VJODH=ZQLe0=R51Pn2gWGM3
+!s100 QN^;ea;8E9NBL5]J::=Mk2
+R6
+31
+R38
+!i10b 1
+R39
+R40
+R41
+!i113 1
+R11
+R12

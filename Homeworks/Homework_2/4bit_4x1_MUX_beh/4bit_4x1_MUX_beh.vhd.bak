@@ -1,0 +1,58 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MUX_4x1_4bit_beh is
+    port (
+        A: in std_logic_vector(3 downto 0);
+        B: in std_logic_vector(3 downto 0);
+		  C: in std_logic_vector(3 downto 0);
+		  D: in std_logic_vector(3 downto 0);
+        sel: in std_logic_vector(1 downto 0);
+        op: out std_logic_vector(3 downto 0)
+    ) ;
+end alu_beh;
+
+architecture a1 of alu_beh is
+    function add(A: in std_logic_vector(operand_width-1 downto 0); B: in std_logic_vector(operand_width-1 downto 0))
+        return std_logic_vector is
+            -- Declare "sum" and "carry" variable
+				variable sum : std_logic_vector(4 downto 0) := (others => '0');
+				variable carry : std_ulogic := '0';
+				variable i : integer;
+            -- you can use aggregate to initialize the variables & signals as shown below
+            --    variable variable_name : std_logic_vector(3 downto 0) := (others => '0');
+        begin
+            -- write logic for addition
+            -- Hint: Use for loop
+				for i in 0 to 3 loop
+					sum(i) := ((A(i) XOR B(i)) XOR carry);
+					carry := ((A(i) AND B(i)) OR (carry AND (A(i) OR B(i))));
+				end loop;
+				sum(4) := carry;
+            return "000"&sum;
+    end add;
+
+ 
+begin
+alu : process( A, B, sel )
+begin
+   -- complete VHDL code for various outputs of ALU based on select lines
+   -- Hint: use if/else statement
+   --
+   -- add function usage :
+   --   signal_name <= add(A,B)
+   --   variable_name := add(A,B)
+   --
+   -- concatenate operator usage:
+   --    "0000"&A 
+	if ((sel(1) = '0') AND (sel(0) = '0')) then
+		op <= A&B;
+	elsif ((sel(1) = '0') AND (sel(0) = '1')) then
+		op <= add(A,B);
+	elsif ((sel(1) = '1') AND (sel(0) = '0')) then
+		op <= "0000"&(A XOR B);
+	else
+		op <= add(A,A);
+	end if;
+end process ; -- alu
+end a1 ; -- a1

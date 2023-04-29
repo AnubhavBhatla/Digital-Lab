@@ -1,0 +1,37 @@
+|DUT
+input_vector[0] => Decoder_3x8_beh:add_instance.E
+input_vector[1] => Decoder_3x8_beh:add_instance.A[0]
+input_vector[2] => Decoder_3x8_beh:add_instance.A[1]
+input_vector[3] => Decoder_3x8_beh:add_instance.A[2]
+output_vector[0] <= Decoder_3x8_beh:add_instance.Y[0]
+output_vector[1] <= Decoder_3x8_beh:add_instance.Y[1]
+output_vector[2] <= Decoder_3x8_beh:add_instance.Y[2]
+output_vector[3] <= Decoder_3x8_beh:add_instance.Y[3]
+output_vector[4] <= Decoder_3x8_beh:add_instance.Y[4]
+output_vector[5] <= Decoder_3x8_beh:add_instance.Y[5]
+output_vector[6] <= Decoder_3x8_beh:add_instance.Y[6]
+output_vector[7] <= Decoder_3x8_beh:add_instance.Y[7]
+
+
+|DUT|Decoder_3x8_beh:add_instance
+A[0] => Decoder0.IN2
+A[1] => Decoder0.IN1
+A[2] => Decoder0.IN0
+E => Y.OUTPUTSELECT
+E => Y.OUTPUTSELECT
+E => Y.OUTPUTSELECT
+E => Y.OUTPUTSELECT
+E => Y.OUTPUTSELECT
+E => Y.OUTPUTSELECT
+E => Y.OUTPUTSELECT
+E => Y.OUTPUTSELECT
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

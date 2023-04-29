@@ -1,0 +1,16 @@
+|DUT
+input_vector[0] => scrabble_score_beh:add_instance.X[0]
+input_vector[1] => scrabble_score_beh:add_instance.X[1]
+input_vector[2] => scrabble_score_beh:add_instance.X[2]
+input_vector[3] => scrabble_score_beh:add_instance.X[3]
+output_vector[0] <= scrabble_score_beh:add_instance.Y
+
+
+|DUT|scrabble_score_beh:add_instance
+X[0] => Y.IN0
+X[1] => Y.IN1
+X[2] => Y.IN0
+X[3] => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

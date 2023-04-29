@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/simulation/modelsim
+Edut
+Z1 w1632483403
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8D:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/DUT.vhd
+Z5 FD:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/DUT.vhd
+l0
+L4 1
+VoXzlKKh[0hG[nDj7ALWQ?0
+!s100 dagi67J1fJn21Bh5T:Jjm3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1632483512
+!i10b 1
+Z8 !s108 1632483512.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/DUT.vhd|
+Z10 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/DUT.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 oXzlKKh[0hG[nDj7ALWQ?0
+!i122 1
+l16
+L9 22
+VMf7:R;7j``PUeFUSZzN641
+!s100 POC=;48g_lP:RDfBl7TWE2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Escrabble_score_beh
+Z13 w1632483348
+R2
+R3
+!i122 0
+R0
+Z14 8D:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/scrabble_beh.vhd
+Z15 FD:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/scrabble_beh.vhd
+l0
+L4 1
+VNV477=T>dAikd>83bEO?R0
+!s100 XikU2Izagol4^MBoP<lUm0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/scrabble_beh.vhd|
+Z17 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/scrabble_beh.vhd|
+!i113 1
+R11
+R12
+Abeh
+R2
+R3
+DEx4 work 18 scrabble_score_beh 0 22 NV477=T>dAikd>83bEO?R0
+!i122 0
+l13
+L11 10
+VaUT7:2MD]e`f5AHUl;Nd83
+!s100 dZ0jh2[nfbzkUnLJYSPiU0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Etestbench
+Z18 w1632483062
+R3
+R2
+!i122 2
+R0
+Z19 8D:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/Testbench.vhdl
+Z20 FD:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|D:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/Testbench.vhdl|
+!s107 D:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+VE@Nbh:jJ]F5P1F`R1UoXG2
+!s100 o=aL_3`l6WZB;7lmDW[1S2
+R6
+31
+R7
+!i10b 1
+R8
+R21
+Z22 !s107 D:/IITB/Semester_3/EE214/Homework/Homework_2/Scrabble_beh/Testbench.vhdl|
+!i113 1
+R11
+R12

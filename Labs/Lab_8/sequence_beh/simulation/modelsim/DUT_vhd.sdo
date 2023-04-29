@@ -1,0 +1,2744 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+
+// 
+// Device: Altera 5M1270ZT144C5 Package TQFP144
+// 
+
+// 
+// This SDF file should be used for ModelSim-Altera (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "TopLevel")
+  (DATE "10/29/2021 16:10:34")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus Prime")
+  (VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\altera_reserved_tms\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (1132:1132:1132) (1132:1132:1132))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\altera_reserved_tck\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (1132:1132:1132) (1132:1132:1132))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\altera_reserved_tdi\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio combout (1132:1132:1132) (1132:1132:1132))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[8\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (944:944:944) (944:944:944))
+        (PORT datab (936:936:936) (936:936:936))
+        (PORT datac (2596:2596:2596) (2596:2596:2596))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[8\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[9\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (2011:2011:2011) (2011:2011:2011))
+        (PORT datad (943:943:943) (943:943:943))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[9\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[10\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (2480:2480:2480) (2480:2480:2480))
+        (PORT datad (1346:1346:1346) (1346:1346:1346))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[10\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[11\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (905:905:905) (905:905:905))
+        (PORT datac (949:949:949) (949:949:949))
+        (PORT datad (2174:2174:2174) (2174:2174:2174))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[11\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (4924:4924:4924) (4924:4924:4924))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[12\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2202:2202:2202) (2202:2202:2202))
+        (PORT datac (956:956:956) (956:956:956))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[12\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (4203:4203:4203) (4203:4203:4203))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[13\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2024:2024:2024) (2024:2024:2024))
+        (PORT datad (922:922:922) (922:922:922))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[13\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (4924:4924:4924) (4924:4924:4924))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[14\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (3195:3195:3195) (3195:3195:3195))
+        (PORT datad (929:929:929) (929:929:929))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[14\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[15\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (908:908:908) (908:908:908))
+        (PORT datab (3201:3201:3201) (3201:3201:3201))
+        (PORT datac (2092:2092:2092) (2092:2092:2092))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[15\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|tms_cnt\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (2481:2481:2481) (2481:2481:2481))
+        (PORT datad (951:951:951) (951:951:951))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|tms_cnt\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|tms_cnt\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (961:961:961) (961:961:961))
+        (PORT datad (952:952:952) (952:952:952))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|tms_cnt\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (4203:4203:4203) (4203:4203:4203))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|tms_cnt\[2\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (935:935:935) (935:935:935))
+        (PORT datac (963:963:963) (963:963:963))
+        (PORT datad (915:915:915) (915:915:915))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|tms_cnt\[2\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (4203:4203:4203) (4203:4203:4203))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2396:2396:2396) (2396:2396:2396))
+        (PORT datab (1346:1346:1346) (1346:1346:1346))
+        (PORT datac (948:948:948) (948:948:948))
+        (PORT datad (918:918:918) (918:918:918))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (873:873:873) (873:873:873))
+        (PORT datab (2696:2696:2696) (2696:2696:2696))
+        (PORT datac (1386:1386:1386) (1386:1386:1386))
+        (PORT datad (2838:2838:2838) (2838:2838:2838))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (3621:3621:3621) (3621:3621:3621))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[2\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2269:2269:2269) (2269:2269:2269))
+        (PORT datab (3525:3525:3525) (3525:3525:3525))
+        (PORT datad (2168:2168:2168) (2168:2168:2168))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[2\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (3689:3689:3689) (3689:3689:3689))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[3\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (2008:2008:2008) (2008:2008:2008))
+        (PORT datad (951:951:951) (951:951:951))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[3\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[5\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (905:905:905) (905:905:905))
+        (PORT datac (2589:2589:2589) (2589:2589:2589))
+        (PORT datad (2680:2680:2680) (2680:2680:2680))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[5\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[6\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (937:937:937) (937:937:937))
+        (PORT datac (985:985:985) (985:985:985))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[6\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (4272:4272:4272) (4272:4272:4272))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[7\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2519:2519:2519) (2519:2519:2519))
+        (PORT datac (989:989:989) (989:989:989))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[7\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[4\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (904:904:904) (904:904:904))
+        (PORT datac (979:979:979) (979:979:979))
+        (PORT datad (2683:2683:2683) (2683:2683:2683))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\[4\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (4272:4272:4272) (4272:4272:4272))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|tdo_bypass_reg\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (2847:2847:2847) (2847:2847:2847))
+        (PORT datac (4435:4435:4435) (4435:4435:4435))
+        (PORT datad (940:940:940) (940:940:940))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|tdo_bypass_reg\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|shadow_jsm\|state\~4\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (2849:2849:2849) (2849:2849:2849))
+        (PORT datad (2321:2321:2321) (2321:2321:2321))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[9\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (914:914:914) (914:914:914))
+        (PORT datab (2023:2023:2023) (2023:2023:2023))
+        (PORT datac (3625:3625:3625) (3625:3625:3625))
+        (PORT datad (920:920:920) (920:920:920))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+        (IOPATH qfbkin combout (595:595:595) (595:595:595))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[9\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (3905:3905:3905) (3905:3905:3905))
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3394:3394:3394) (3394:3394:3394))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+        (IOPATH (posedge clk) qfbkout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) qfbkout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datac (posedge clk) (333:333:333))
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datac (posedge clk) (221:221:221))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[8\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (945:945:945) (945:945:945))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[8\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1225:1225:1225) (1225:1225:1225))
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3394:3394:3394) (3394:3394:3394))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datac (posedge clk) (333:333:333))
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datac (posedge clk) (221:221:221))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[7\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (921:921:921) (921:921:921))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[7\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3394:3394:3394) (3394:3394:3394))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[6\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (988:988:988) (988:988:988))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[6\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1268:1268:1268) (1268:1268:1268))
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3394:3394:3394) (3394:3394:3394))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datac (posedge clk) (333:333:333))
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datac (posedge clk) (221:221:221))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[5\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1383:1383:1383) (1383:1383:1383))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[5\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1663:1663:1663) (1663:1663:1663))
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3394:3394:3394) (3394:3394:3394))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datac (posedge clk) (333:333:333))
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datac (posedge clk) (221:221:221))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[4\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (1331:1331:1331) (1331:1331:1331))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[4\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3394:3394:3394) (3394:3394:3394))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[3\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (922:922:922) (922:922:922))
+        (PORT datab (1349:1349:1349) (1349:1349:1349))
+        (PORT datac (989:989:989) (989:989:989))
+        (PORT datad (1328:1328:1328) (1328:1328:1328))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+        (IOPATH qfbkin combout (595:595:595) (595:595:595))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[3\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1269:1269:1269) (1269:1269:1269))
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3394:3394:3394) (3394:3394:3394))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+        (IOPATH (posedge clk) qfbkout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) qfbkout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datac (posedge clk) (333:333:333))
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datac (posedge clk) (221:221:221))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[2\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (899:899:899) (899:899:899))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[2\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3394:3394:3394) (3394:3394:3394))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (1345:1345:1345) (1345:1345:1345))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3394:3394:3394) (3394:3394:3394))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (2738:2738:2738) (2738:2738:2738))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|jtag_ir_reg\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3426:3426:3426) (3426:3426:3426))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|virtual_ir_scan_reg\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2024:2024:2024) (2024:2024:2024))
+        (PORT datab (2760:2760:2760) (2760:2760:2760))
+        (PORT datac (2128:2128:2128) (2128:2128:2128))
+        (PORT datad (1961:1961:1961) (1961:1961:1961))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|virtual_ir_scan_reg\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (1923:1923:1923) (1923:1923:1923))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[4\]\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2720:2720:2720) (2720:2720:2720))
+        (PORT datab (4405:4405:4405) (4405:4405:4405))
+        (PORT datac (2154:2154:2154) (2154:2154:2154))
+        (PORT datad (2308:2308:2308) (2308:2308:2308))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|reset_ena_reg\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (941:941:941) (941:941:941))
+        (PORT datab (933:933:933) (933:933:933))
+        (PORT datac (2593:2593:2593) (2593:2593:2593))
+        (PORT datad (2625:2625:2625) (2625:2625:2625))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|reset_ena_reg\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (982:982:982) (982:982:982))
+        (PORT datad (2794:2794:2794) (2794:2794:2794))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5196:5196:5196) (5196:5196:5196))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3131:3131:3131) (3131:3131:3131))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|Equal3\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1000:1000:1000) (1000:1000:1000))
+        (PORT datac (1045:1045:1045) (1045:1045:1045))
+        (PORT datad (995:995:995) (995:995:995))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (935:935:935) (935:935:935))
+        (PORT datab (2640:2640:2640) (2640:2640:2640))
+        (PORT datac (2956:2956:2956) (2956:2956:2956))
+        (PORT datad (1845:1845:1845) (1845:1845:1845))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5196:5196:5196) (5196:5196:5196))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[2\]\~3\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2884:2884:2884) (2884:2884:2884))
+        (PORT datab (936:936:936) (936:936:936))
+        (PORT datac (1004:1004:1004) (1004:1004:1004))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[2\]\~4\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (735:735:735) (735:735:735))
+        (PORT datab (3457:3457:3457) (3457:3457:3457))
+        (PORT datac (2079:2079:2079) (2079:2079:2079))
+        (PORT datad (3466:3466:3466) (3466:3466:3466))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (988:988:988) (988:988:988))
+        (PORT datad (2794:2794:2794) (2794:2794:2794))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5196:5196:5196) (5196:5196:5196))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3131:3131:3131) (3131:3131:3131))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[2\]\~3\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1001:1001:1001) (1001:1001:1001))
+        (PORT datac (1046:1046:1046) (1046:1046:1046))
+        (PORT datad (996:996:996) (996:996:996))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[1\]\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (988:988:988) (988:988:988))
+        (PORT datac (1032:1032:1032) (1032:1032:1032))
+        (PORT datad (1001:1001:1001) (1001:1001:1001))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[1\]\~2\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1820:1820:1820) (1820:1820:1820))
+        (PORT datac (1898:1898:1898) (1898:1898:1898))
+        (PORT datad (2634:2634:2634) (2634:2634:2634))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1863:1863:1863) (1863:1863:1863))
+        (PORT datab (928:928:928) (928:928:928))
+        (PORT datac (1860:1860:1860) (1860:1860:1860))
+        (PORT datad (305:305:305) (305:305:305))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5196:5196:5196) (5196:5196:5196))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[2\]\~5\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (934:934:934) (934:934:934))
+        (PORT datac (2958:2958:2958) (2958:2958:2958))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[2\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (892:892:892) (892:892:892))
+        (PORT datab (894:894:894) (894:894:894))
+        (PORT datac (1933:1933:1933) (1933:1933:1933))
+        (PORT datad (1883:1883:1883) (1883:1883:1883))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[2\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (3958:3958:3958) (3958:3958:3958))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|clr_reg\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (1821:1821:1821) (1821:1821:1821))
+        (PORT datad (2035:2035:2035) (2035:2035:2035))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|clr_reg\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[4\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1308:1308:1308) (1308:1308:1308))
+        (PORT datab (755:755:755) (755:755:755))
+        (PORT datac (2157:2157:2157) (2157:2157:2157))
+        (PORT datad (305:305:305) (305:305:305))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[4\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5196:5196:5196) (5196:5196:5196))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[3\]\~8\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2883:2883:2883) (2883:2883:2883))
+        (PORT datab (3452:3452:3452) (3452:3452:3452))
+        (PORT datac (1004:1004:1004) (1004:1004:1004))
+        (PORT datad (2081:2081:2081) (2081:2081:2081))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[3\]\~7\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (2952:2952:2952) (2952:2952:2952))
+        (PORT datad (2083:2083:2083) (2083:2083:2083))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[3\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (735:735:735) (735:735:735))
+        (PORT datab (927:927:927) (927:927:927))
+        (PORT datac (771:771:771) (771:771:771))
+        (PORT datad (3467:3467:3467) (3467:3467:3467))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[3\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5196:5196:5196) (5196:5196:5196))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[2\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1981:1981:1981) (1981:1981:1981))
+        (PORT datad (2786:2786:2786) (2786:2786:2786))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|irsr_reg\[2\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5196:5196:5196) (5196:5196:5196))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3131:3131:3131) (3131:3131:3131))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_mode_reg\[1\]\~1\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (988:988:988) (988:988:988))
+        (PORT datab (982:982:982) (982:982:982))
+        (PORT datac (2908:2908:2908) (2908:2908:2908))
+        (PORT datad (994:994:994) (994:994:994))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|tdo_mux_out\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (927:927:927) (927:927:927))
+        (PORT datab (2669:2669:2669) (2669:2669:2669))
+        (PORT datac (2159:2159:2159) (2159:2159:2159))
+        (PORT datad (755:755:755) (755:755:755))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|tdo_mux_out\~2\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (982:982:982) (982:982:982))
+        (PORT datab (998:998:998) (998:998:998))
+        (PORT datac (1040:1040:1040) (1040:1040:1040))
+        (PORT datad (3466:3466:3466) (3466:3466:3466))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|node_ena\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1936:1936:1936) (1936:1936:1936))
+        (PORT datab (2770:2770:2770) (2770:2770:2770))
+        (PORT datac (3532:3532:3532) (3532:3532:3532))
+        (PORT datad (2173:2173:2173) (2173:2173:2173))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|node_ena\~1\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (700:700:700) (700:700:700))
+        (PORT datab (1900:1900:1900) (1900:1900:1900))
+        (PORT datac (2009:2009:2009) (2009:2009:2009))
+        (PORT datad (952:952:952) (952:952:952))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|virtual_dr_scan_reg\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2026:2026:2026) (2026:2026:2026))
+        (PORT datab (2761:2761:2761) (2761:2761:2761))
+        (PORT datac (2130:2130:2130) (2130:2130:2130))
+        (PORT datad (1960:1960:1960) (1960:1960:1960))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|virtual_dr_scan_reg\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5606:5606:5606) (5606:5606:5606))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (1923:1923:1923) (1923:1923:1923))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|node_ena_proc\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (3078:3078:3078) (3078:3078:3078))
+        (PORT datad (3197:3197:3197) (3197:3197:3197))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|node_ena\~2\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2011:2011:2011) (2011:2011:2011))
+        (PORT datab (896:896:896) (896:896:896))
+        (PORT datac (770:770:770) (770:770:770))
+        (PORT datad (916:916:916) (916:916:916))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|splitter_nodes_receive_0\[3\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (702:702:702) (702:702:702))
+        (PORT datab (919:919:919) (919:919:919))
+        (PORT datac (768:768:768) (768:768:768))
+        (PORT datad (1811:1811:1811) (1811:1811:1811))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|splitter_nodes_receive_0\[3\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (5196:5196:5196) (5196:5196:5196))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\u0\|virtual_jtag_0\|sld_virtual_jtag_basic_inst\|virtual_state_cdr\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2800:2800:2800) (2800:2800:2800))
+        (PORT datab (2307:2307:2307) (2307:2307:2307))
+        (PORT datac (2165:2165:2165) (2165:2165:2165))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\u0\|virtual_jtag_0\|sld_virtual_jtag_basic_inst\|virtual_state_sdr\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2800:2800:2800) (2800:2800:2800))
+        (PORT datab (2848:2848:2848) (2848:2848:2848))
+        (PORT datac (2167:2167:2167) (2167:2167:2167))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE io.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2667:2667:2667) (2667:2667:2667))
+        (PORT datab (2771:2771:2771) (2771:2771:2771))
+        (PORT datac (1038:1038:1038) (1038:1038:1038))
+        (PORT datad (3424:3424:3424) (3424:3424:3424))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE io.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\shift_reg\~2\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1808:1808:1808) (1808:1808:1808))
+        (PORT datab (1940:1940:1940) (1940:1940:1940))
+        (PORT datac (1045:1045:1045) (1045:1045:1045))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\u0\|virtual_jtag_0\|sld_virtual_jtag_basic_inst\|virtual_state_udr\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2664:2664:2664) (2664:2664:2664))
+        (PORT datab (2774:2774:2774) (2774:2774:2774))
+        (PORT datad (3428:3428:3428) (3428:3428:3428))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\shift_reg\~3\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (782:782:782) (782:782:782))
+        (PORT datac (1050:1050:1050) (1050:1050:1050))
+        (PORT datad (1942:1942:1942) (1942:1942:1942))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\datau\[2\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (730:730:730) (730:730:730))
+        (PORT datab (920:920:920) (920:920:920))
+        (PORT datac (812:812:812) (812:812:812))
+        (PORT datad (2071:2071:2071) (2071:2071:2071))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\datau\[2\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\shift_reg\~1\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (782:782:782) (782:782:782))
+        (PORT datac (1050:1050:1050) (1050:1050:1050))
+        (PORT datad (1941:1941:1941) (1941:1941:1941))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\data\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (4364:4364:4364) (4364:4364:4364))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\data\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (4644:4644:4644) (4644:4644:4644))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (2316:2316:2316) (2316:2316:2316))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datac (posedge clk) (333:333:333))
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datac (posedge clk) (221:221:221))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\shift_reg\~0\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (770:770:770) (770:770:770))
+        (PORT datac (1040:1040:1040) (1040:1040:1040))
+        (PORT datad (1934:1934:1934) (1934:1934:1934))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\dut_input\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (978:978:978) (978:978:978))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\dut_input\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1258:1258:1258) (1258:1258:1258))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (2331:2331:2331) (2331:2331:2331))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datac (posedge clk) (333:333:333))
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datac (posedge clk) (221:221:221))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\dut_instance\|add_instance\|state\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (944:944:944) (944:944:944))
+        (PORT datac (1011:1011:1011) (1011:1011:1011))
+        (PORT datad (942:942:942) (942:942:942))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\dut_instance\|add_instance\|state\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (3848:3848:3848) (3848:3848:3848))
+        (PORT clk (5278:5278:5278) (5278:5278:5278))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\dut_instance\|add_instance\|state\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (957:957:957) (957:957:957))
+        (PORT datac (1006:1006:1006) (1006:1006:1006))
+        (PORT datad (932:932:932) (932:932:932))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\dut_instance\|add_instance\|state\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (3848:3848:3848) (3848:3848:3848))
+        (PORT clk (5278:5278:5278) (5278:5278:5278))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\datau\[0\]\~1\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1805:1805:1805) (1805:1805:1805))
+        (PORT datab (767:767:767) (767:767:767))
+        (PORT datac (1041:1041:1041) (1041:1041:1041))
+        (PORT datad (1935:1935:1935) (1935:1935:1935))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\datau\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (922:922:922) (922:922:922))
+        (PORT datac (1967:1967:1967) (1967:1967:1967))
+        (PORT datad (750:750:750) (750:750:750))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\datau\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (1925:1925:1925) (1925:1925:1925))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\datau\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (734:734:734) (734:734:734))
+        (PORT datac (984:984:984) (984:984:984))
+        (PORT datad (2085:2085:2085) (2085:2085:2085))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\datau\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (1925:1925:1925) (1925:1925:1925))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|tdo_mux_out\~1\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2837:2837:2837) (2837:2837:2837))
+        (PORT datab (988:988:988) (988:988:988))
+        (PORT datac (2148:2148:2148) (2148:2148:2148))
+        (PORT datad (3474:3474:3474) (3474:3474:3474))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|clear_signal\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2676:2676:2676) (2676:2676:2676))
+        (PORT datad (3463:3463:3463) (3463:3463:3463))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[0\]\~13\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2186:2186:2186) (2186:2186:2186))
+        (PORT datab (2212:2212:2212) (2212:2212:2212))
+        (PORT datac (3630:3630:3630) (3630:3630:3630))
+        (PORT datad (1998:1998:1998) (1998:1998:1998))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (984:984:984) (984:984:984))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH dataa cout0 (978:978:978) (978:978:978))
+        (IOPATH dataa cout1 (973:973:973) (973:973:973))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (2495:2495:2495) (2495:2495:2495))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3217:3217:3217) (3217:3217:3217))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (982:982:982) (982:982:982))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH cin0 regin (1161:1161:1161) (1161:1161:1161))
+        (IOPATH cin1 regin (1150:1150:1150) (1150:1150:1150))
+        (IOPATH dataa cout0 (978:978:978) (978:978:978))
+        (IOPATH cin0 cout0 (123:123:123) (123:123:123))
+        (IOPATH dataa cout1 (973:973:973) (973:973:973))
+        (IOPATH cin1 cout1 (111:111:111) (111:111:111))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (2495:2495:2495) (2495:2495:2495))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3217:3217:3217) (3217:3217:3217))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[2\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datab (935:935:935) (935:935:935))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH cin0 regin (1161:1161:1161) (1161:1161:1161))
+        (IOPATH cin1 regin (1150:1150:1150) (1150:1150:1150))
+        (IOPATH datab cout0 (747:747:747) (747:747:747))
+        (IOPATH cin0 cout0 (123:123:123) (123:123:123))
+        (IOPATH datab cout1 (743:743:743) (743:743:743))
+        (IOPATH cin1 cout1 (111:111:111) (111:111:111))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[2\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (2495:2495:2495) (2495:2495:2495))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3217:3217:3217) (3217:3217:3217))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[3\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (934:934:934) (934:934:934))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH cin0 regin (1161:1161:1161) (1161:1161:1161))
+        (IOPATH cin1 regin (1150:1150:1150) (1150:1150:1150))
+        (IOPATH dataa cout0 (978:978:978) (978:978:978))
+        (IOPATH cin0 cout0 (123:123:123) (123:123:123))
+        (IOPATH dataa cout1 (973:973:973) (973:973:973))
+        (IOPATH cin1 cout1 (111:111:111) (111:111:111))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[3\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (2495:2495:2495) (2495:2495:2495))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3217:3217:3217) (3217:3217:3217))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[4\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datad (930:930:930) (930:930:930))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+        (IOPATH cin0 regin (1161:1161:1161) (1161:1161:1161))
+        (IOPATH cin1 regin (1150:1150:1150) (1150:1150:1150))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[4\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT sclr (2495:2495:2495) (2495:2495:2495))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (3217:3217:3217) (3217:3217:3217))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP sclr (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD sclr (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[0\]\~12\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1005:1005:1005) (1005:1005:1005))
+        (PORT datab (947:947:947) (947:947:947))
+        (PORT datac (1053:1053:1053) (1053:1053:1053))
+        (PORT datad (961:961:961) (961:961:961))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[0\]\~14\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2680:2680:2680) (2680:2680:2680))
+        (PORT datab (934:934:934) (934:934:934))
+        (PORT datac (788:788:788) (788:788:788))
+        (PORT datad (3461:3461:3461) (3461:3461:3461))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\~6\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (3632:3632:3632) (3632:3632:3632))
+        (PORT datad (2324:2324:2324) (2324:2324:2324))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\~8\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2046:2046:2046) (2046:2046:2046))
+        (PORT datab (2120:2120:2120) (2120:2120:2120))
+        (PORT datac (3628:3628:3628) (3628:3628:3628))
+        (PORT datad (2321:2321:2321) (2321:2321:2321))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\~9\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1003:1003:1003) (1003:1003:1003))
+        (PORT datab (935:935:935) (935:935:935))
+        (PORT datac (1052:1052:1052) (1052:1052:1052))
+        (PORT datad (960:960:960) (960:960:960))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\~10\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2183:2183:2183) (2183:2183:2183))
+        (PORT datab (734:734:734) (734:734:734))
+        (PORT datac (776:776:776) (776:776:776))
+        (PORT datad (1889:1889:1889) (1889:1889:1889))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\~12\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1002:1002:1002) (1002:1002:1002))
+        (PORT datab (944:944:944) (944:944:944))
+        (PORT datac (1051:1051:1051) (1051:1051:1051))
+        (PORT datad (958:958:958) (958:958:958))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[0\]\~14\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2197:2197:2197) (2197:2197:2197))
+        (PORT datab (2201:2201:2201) (2201:2201:2201))
+        (PORT datac (3612:3612:3612) (3612:3612:3612))
+        (PORT datad (1994:1994:1994) (1994:1994:1994))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[3\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (5583:5583:5583) (5583:5583:5583))
+        (PORT datab (3585:3585:3585) (3585:3585:3585))
+        (PORT datac (1942:1942:1942) (1942:1942:1942))
+        (PORT datad (2195:2195:2195) (2195:2195:2195))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[3\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (1925:1925:1925) (1925:1925:1925))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[2\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (1156:1156:1156) (1156:1156:1156))
+        (PORT datab (3575:3575:3575) (3575:3575:3575))
+        (PORT datac (1028:1028:1028) (1028:1028:1028))
+        (PORT datad (2215:2215:2215) (2215:2215:2215))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[2\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (1925:1925:1925) (1925:1925:1925))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\~5\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (3613:3613:3613) (3613:3613:3613))
+        (PORT datad (916:916:916) (916:916:916))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[1\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2196:2196:2196) (2196:2196:2196))
+        (PORT datab (742:742:742) (742:742:742))
+        (PORT datac (775:775:775) (775:775:775))
+        (PORT datad (2117:2117:2117) (2117:2117:2117))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[1\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (1925:1925:1925) (1925:1925:1925))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2732:2732:2732) (2732:2732:2732))
+        (PORT datab (969:969:969) (969:969:969))
+        (PORT datac (3620:3620:3620) (3620:3620:3620))
+        (PORT datad (2047:2047:2047) (2047:2047:2047))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (1925:1925:1925) (1925:1925:1925))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|tdo_mux_out\~3\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (2833:2833:2833) (2833:2833:2833))
+        (PORT datab (763:763:763) (763:763:763))
+        (PORT datac (759:759:759) (759:759:759))
+        (PORT datad (2077:2077:2077) (2077:2077:2077))
+        (IOPATH dataa combout (914:914:914) (914:914:914))
+        (IOPATH datab combout (740:740:740) (740:740:740))
+        (IOPATH datac combout (511:511:511) (511:511:511))
+        (IOPATH datad combout (200:200:200) (200:200:200))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|tdo\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (727:727:727) (727:727:727))
+        (PORT datab (2403:2403:2403) (2403:2403:2403))
+        (PORT datac (2740:2740:2740) (2740:2740:2740))
+        (PORT datad (753:753:753) (753:753:753))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datab regin (1061:1061:1061) (1061:1061:1061))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|tdo\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\data\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (976:976:976) (976:976:976))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\data\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1256:1256:1256) (1256:1256:1256))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (2316:2316:2316) (2316:2316:2316))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datac (posedge clk) (333:333:333))
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datac (posedge clk) (221:221:221))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\dut_input\[0\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (962:962:962) (962:962:962))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\dut_input\[0\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (1242:1242:1242) (1242:1242:1242))
+        (PORT aclr (1372:1372:1372) (1372:1372:1372))
+        (PORT clk (5171:5171:5171) (5171:5171:5171))
+        (PORT ena (2331:2331:2331) (2331:2331:2331))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datac (posedge clk) (333:333:333))
+      (SETUP datain (posedge clk) (333:333:333))
+      (SETUP ena (posedge clk) (333:333:333))
+      (HOLD datac (posedge clk) (221:221:221))
+      (HOLD datain (posedge clk) (221:221:221))
+      (HOLD ena (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_asynch_lcell")
+    (INSTANCE \\dut_instance\|add_instance\|state\[2\]\\.lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT dataa (955:955:955) (955:955:955))
+        (PORT datac (1004:1004:1004) (1004:1004:1004))
+        (PORT datad (936:936:936) (936:936:936))
+        (IOPATH dataa regin (1183:1183:1183) (1183:1183:1183))
+        (IOPATH datac regin (804:804:804) (804:804:804))
+        (IOPATH datad regin (591:591:591) (591:591:591))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_lcell_register")
+    (INSTANCE \\dut_instance\|add_instance\|state\[2\]\\.lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT aclr (3848:3848:3848) (3848:3848:3848))
+        (PORT clk (5278:5278:5278) (5278:5278:5278))
+        (IOPATH (posedge clk) regout (376:376:376) (376:376:376))
+        (IOPATH (posedge aclr) regout (577:577:577) (577:577:577))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (333:333:333))
+      (HOLD datain (posedge clk) (221:221:221))
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\state_out\[0\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (2099:2099:2099) (2099:2099:2099))
+        (IOPATH datain padio (2322:2322:2322) (2322:2322:2322))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\state_out\[1\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (1765:1765:1765) (1765:1765:1765))
+        (IOPATH datain padio (2322:2322:2322) (2322:2322:2322))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\state_out\[2\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (2402:2402:2402) (2402:2402:2402))
+        (IOPATH datain padio (2322:2322:2322) (2322:2322:2322))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\state_out\[3\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (2425:2425:2425) (2425:2425:2425))
+        (IOPATH datain padio (2322:2322:2322) (2322:2322:2322))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\state_out\[4\]\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (774:774:774) (774:774:774))
+        (IOPATH datain padio (2322:2322:2322) (2322:2322:2322))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "maxv_io")
+    (INSTANCE \\altera_reserved_tdo\~I\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (2322:2322:2322) (2322:2322:2322))
+      )
+    )
+  )
+)

@@ -1,0 +1,54 @@
+|DUT
+input_vector[0] => MUX_4x1_4bit_beh:add_instance.sel[0]
+input_vector[1] => MUX_4x1_4bit_beh:add_instance.sel[1]
+input_vector[2] => MUX_4x1_4bit_beh:add_instance.A[0]
+input_vector[3] => MUX_4x1_4bit_beh:add_instance.A[1]
+input_vector[4] => MUX_4x1_4bit_beh:add_instance.A[2]
+input_vector[5] => MUX_4x1_4bit_beh:add_instance.A[3]
+input_vector[6] => MUX_4x1_4bit_beh:add_instance.B[0]
+input_vector[7] => MUX_4x1_4bit_beh:add_instance.B[1]
+input_vector[8] => MUX_4x1_4bit_beh:add_instance.B[2]
+input_vector[9] => MUX_4x1_4bit_beh:add_instance.B[3]
+input_vector[10] => MUX_4x1_4bit_beh:add_instance.C[0]
+input_vector[11] => MUX_4x1_4bit_beh:add_instance.C[1]
+input_vector[12] => MUX_4x1_4bit_beh:add_instance.C[2]
+input_vector[13] => MUX_4x1_4bit_beh:add_instance.C[3]
+input_vector[14] => MUX_4x1_4bit_beh:add_instance.D[0]
+input_vector[15] => MUX_4x1_4bit_beh:add_instance.D[1]
+input_vector[16] => MUX_4x1_4bit_beh:add_instance.D[2]
+input_vector[17] => MUX_4x1_4bit_beh:add_instance.D[3]
+output_vector[0] << MUX_4x1_4bit_beh:add_instance.op[0]
+output_vector[1] << MUX_4x1_4bit_beh:add_instance.op[1]
+output_vector[2] << MUX_4x1_4bit_beh:add_instance.op[2]
+output_vector[3] << MUX_4x1_4bit_beh:add_instance.op[3]
+
+
+|DUT|MUX_4x1_4bit_beh:add_instance
+A[0] => op.DATAB
+A[1] => op.DATAB
+A[2] => op.DATAB
+A[3] => op.DATAB
+B[0] => op.DATAB
+B[1] => op.DATAB
+B[2] => op.DATAB
+B[3] => op.DATAB
+C[0] => op.DATAB
+C[1] => op.DATAB
+C[2] => op.DATAB
+C[3] => op.DATAB
+D[0] => op.DATAA
+D[1] => op.DATAA
+D[2] => op.DATAA
+D[3] => op.DATAA
+sel[0] => MUX_4x1_4bit_beh.IN0
+sel[0] => MUX_4x1_4bit_beh.IN0
+sel[0] => MUX_4x1_4bit_beh.IN0
+sel[1] => MUX_4x1_4bit_beh.IN1
+sel[1] => MUX_4x1_4bit_beh.IN1
+sel[1] => MUX_4x1_4bit_beh.IN1
+op[0] <= op.DB_MAX_OUTPUT_PORT_TYPE
+op[1] <= op.DB_MAX_OUTPUT_PORT_TYPE
+op[2] <= op.DB_MAX_OUTPUT_PORT_TYPE
+op[3] <= op.DB_MAX_OUTPUT_PORT_TYPE
+
+
